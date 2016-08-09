@@ -5,3 +5,18 @@
 body {
   background-color: #e6e6e6;
 }
+
+.col {
+  padding: 0px;
+  transition: 0.5s ease all;
+}
+
+.col:hover {
+  z-index: 1;
+  box-shadow: 0px 0px 30px #131313;
+  transform: scale(1.01);
+}
+
+.merch-img {
+  width: 100%;
+}
