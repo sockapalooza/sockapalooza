@@ -1,3 +1,7 @@
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
 .footer-bottom {
   background-color: #02426c;
 }
@@ -63,5 +67,11 @@
 
 .footer-company-name {
   background-color: #01253d;
-  color: #02426c;
 }
+
+.footer-company-name .footer-logo {
+  width: 300px;
+  padding: 10px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */

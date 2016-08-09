@@ -11,6 +11,10 @@ $black:         #131313;
 $mainFont:      'Quicksand', sans-serif;
 $headerFont:    'Pacifico', cursive;
 
+* {
+    font-family: $mainFont;
+}
+
 .footer-bottom {
     background-color: $blue;
 }
@@ -76,5 +80,19 @@ $headerFont:    'Pacifico', cursive;
 
 .footer-company-name {
     background-color:  $darkblue;
-    color: $blue;
+    .footer-logo {
+        width: 300px;
+        padding: 10px;
+    }
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+}
+
+@media (max-width: 800px) {
+
+
 }
