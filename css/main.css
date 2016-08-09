@@ -11,6 +11,20 @@ body {
   opacity: 0;
 }
 
+.flip {
+  transform: scaleY(-1);
+}
+
+.filters-arrow {
+  font-size: 40px;
+  display: inline-block;
+  transition: 0.3s ease all;
+}
+
+.merch-grid {
+  margin: 50px 0;
+}
+
 .merch {
   padding: 0px;
   transition: 0.3s ease all;
