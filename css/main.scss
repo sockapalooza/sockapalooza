@@ -20,17 +20,13 @@ body {
   background-color: $gray;
 }
 
-main {
-
-}
-
 .transparent {
   opacity: 0;
 }
 
 .merch {
   padding: 0px;
-  transition: 0.5s ease all;
+  transition: 0.3s ease all;
   overflow: hidden;
   height: 25vw;
 
@@ -46,21 +42,20 @@ main {
 }
 
 .merch-info {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.9);
   padding: 10px 0;
   text-align: center;
-  top: -150px;
+  top: -180px;
   position: relative;
   width: 100%;
   transition: 0.3s ease all;
-
 }
 
 .merch-category {
   color: $darkgray;
   text-transform: uppercase;
   font-size: 16px;
-  margin: 0 0 15px 0;
+  margin: 15px 0;
   display: block;
 }
 
@@ -75,6 +70,19 @@ main {
 .merch-price {
   color: $darkgray;
   font-size: 16px;
-  margin: 10px 0 0 0;
+  margin: 10px 0;
   display: block;
+}
+
+.btn-quick-add {
+  background-color: transparent;
+  border: 2px solid $red;
+  color: $red;
+  font-weight: bold;
+  padding: 3px 10px;
+  transition: 0.3s ease all;
+
+  &:hover {
+    background-color: rgba(213, 71, 56, 0.2);
+  }
 }
