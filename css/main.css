@@ -1,0 +1,72 @@
+.sockName {
+  font-family: "Pacifico", cursive;
+  color: #d54738;
+}
+
+.sockDescription {
+  margin-left: 20px;
+  font-size: 12px;
+}
+
+.modal-footer button {
+  width: 100px;
+}
+
+.stock {
+  color: #d54738;
+}
+
+.btn-add-cart {
+  background-color: transparent;
+  border: 2px solid #d54738;
+  color: #d54738;
+  font-weight: bold;
+  padding: 3px 10px;
+  transition: 0.3s ease all;
+}
+
+.btn-add-cart:hover {
+  background-color: rgba(213, 71, 56, 0.2);
+}
+
+.sizeButton {
+  background-color: transparent;
+  border: 2px solid #02426c;
+  color: #02426c;
+  font-weight: bold;
+  padding: 3px 10px;
+  transition: 0.3s ease all;
+}
+
+.sizeButton:hover {
+  background-color: rgba(2, 66, 108, 0.2);
+}
+
+.qty-btn,
+.btn-send {
+  background-color: transparent;
+  border: 2px solid #02426c;
+  color: #02426c;
+  font-weight: bold;
+  padding: 3px 10px;
+  transition: 0.3s ease all;
+}
+
+.qty-btn:hover,
+.btn-send:hover {
+  background-color: rgba(2, 66, 108, 0.2);
+}
+
+.btn-send {
+  background-color: transparent;
+  border: 2px solid #02426c;
+  color: #02426c;
+  font-weight: bold;
+  padding: 3px 10px;
+  transition: 0.3s ease all;
+}
+
+.btn-send:hover {
+  background-color: rgba(2, 66, 108, 0.2);
+  color: #fafafa;
+}

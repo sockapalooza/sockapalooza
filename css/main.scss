@@ -10,3 +10,78 @@ $black:         #131313;
 // FONT
 $mainFont:      'Quicksand', sans-serif;
 $headerFont:    'Pacifico', cursive;
+
+//modal//
+.sockName {
+    font-family: $headerFont;
+    color: $red;
+}
+
+.sockDescription {
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+.modal-footer {
+    button {
+        width: 100px;
+    }
+}
+
+.stock {
+    color: $red;
+}
+
+.btn-add-cart {
+  background-color: transparent;
+  border: 2px solid $red;
+  color: $red;
+  font-weight: bold;
+  padding: 3px 10px;
+  transition: 0.3s ease all;
+
+  &:hover {
+    background-color: rgba(213, 71, 56, 0.2);
+  }
+}
+
+.sizeButton {
+    background-color: transparent;
+    border: 2px solid $blue;
+    color: $blue;
+    font-weight: bold;
+    padding: 3px 10px;
+    transition: 0.3s ease all;
+
+    &:hover {
+      background-color: rgba(2, 66, 108, 0.2);
+    }
+}
+
+.qty-btn,
+.btn-send {
+    background-color: transparent;
+    border: 2px solid $blue;
+    color: $blue;
+    font-weight: bold;
+    padding: 3px 10px;
+    transition: 0.3s ease all;
+
+    &:hover {
+      background-color: rgba(2, 66, 108, 0.2);
+    }
+}
+
+.btn-send {
+    background-color: transparent;
+    border: 2px solid $blue;
+    color: $blue;
+    font-weight: bold;
+    padding: 3px 10px;
+    transition: 0.3s ease all;
+
+    &:hover {
+      background-color: rgba(2, 66, 108, 0.2);
+      color: $white;
+    }
+}

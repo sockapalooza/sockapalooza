@@ -1,0 +1,77 @@
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+.footer-bottom {
+  background-color: #02426c;
+}
+
+.footer-distributed {
+  color: #e6e6e6;
+  font: bold 20px "Quicksand", sans-serif;
+  text-align: left;
+  padding-bottom: 20px;
+  margin-top: 30px;
+}
+
+.footer-distributed h3 {
+  color: #e6e6e6;
+  font: normal 36px "Quicksand", sans-serif;
+  margin: 0 0 10px;
+}
+
+.footer-right-b {
+  margin-top: 40px;
+}
+
+/* The contact form */
+.footer-distributed form {
+  display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea {
+  display: block;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: #01253d;
+  border: none;
+  font: inherit;
+  font-size: 16px;
+  font-weight: normal;
+  color: #d1d2d2;
+  width: 400px;
+  padding: 18px;
+}
+
+.footer-distributed form input {
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.footer-distributed form textarea {
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-distributed form button {
+  border-radius: 3px;
+  background-color: #01253d;
+  color: #e6e6e6;
+  border: 1px solid #e6e6e6;
+  padding: 15px 50px;
+  font-size: 16px;
+  font-weight: bold;
+  float: right;
+}
+
+.footer-company-name {
+  background-color: #01253d;
+}
+
+.footer-company-name .footer-logo {
+  width: 300px;
+  padding: 10px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
