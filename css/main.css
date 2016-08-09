@@ -7,6 +7,10 @@ body {
   background-color: #e6e6e6;
 }
 
+.transparent {
+  opacity: 0;
+}
+
 .merch {
   padding: 0px;
   transition: 0.5s ease all;
@@ -31,6 +35,7 @@ body {
   top: -150px;
   position: relative;
   width: 100%;
+  transition: 0.3s ease all;
 }
 
 .merch-category {
