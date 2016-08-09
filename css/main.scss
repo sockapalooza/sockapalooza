@@ -13,6 +13,7 @@ $headerFont:    'Pacifico', cursive;
 
 * {
   box-sizing: border-box;
+  font-family: $mainFont;
 }
 
 body {
@@ -23,17 +24,51 @@ main {
 
 }
 
-.col {
+.merch {
   padding: 0px;
   transition: 0.5s ease all;
+  overflow: hidden;
+  height: 25vw;
 
   &:hover {
-    z-index: 1;
-    box-shadow: 0px 0px 30px $black;
+    box-shadow: 0px 0px 30px $darkBlue;
     transform: scale(1.01);
+    z-index: 1;
   }
 }
 
 .merch-img {
   width: 100%;
+}
+
+.merch-info {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 0;
+  text-align: center;
+  top: -150px;
+  position: relative;
+  width: 100%;
+}
+
+.merch-category {
+  color: $darkgray;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin: 0 0 15px 0;
+  display: block;
+}
+
+.merch-name {
+  color: $blue;
+  font-family: $headerFont;
+  font-size: 28px;
+  margin: 0px;
+  display: block;
+}
+
+.merch-price {
+  color: $darkgray;
+  font-size: 16px;
+  margin: 10px 0 0 0;
+  display: block;
 }
