@@ -32,14 +32,14 @@ width:100%;
 }
 
 .nav {
-  background-color:$gray;
+  background-color: $blue;
   padding: 5px;
 
 }
 .navcon {
   font-size: 18px;
   padding: 0px;
-  color: $red;
+  color: $white;
 }
 // .cart-modal {
 //   background-color: $black;
@@ -133,4 +133,10 @@ width:100%;
 
 .logo-row {
   margin-bottom: 10px;
+}
+
+.header-logo {
+  width: 200px;
+  transition: 0.5s ease all;
+  opacity: 100;
 }

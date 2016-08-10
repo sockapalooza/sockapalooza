@@ -24,14 +24,14 @@ img {
 }
 
 .nav {
-  background-color: #e6e6e6;
+  background-color: #02426c;
   padding: 5px;
 }
 
 .navcon {
   font-size: 18px;
   padding: 0px;
-  color: #d54738;
+  color: #fafafa;
 }
 
 .cart-wrap {
@@ -117,4 +117,10 @@ img {
 
 .logo-row {
   margin-bottom: 10px;
+}
+
+.header-logo {
+  width: 200px;
+  transition: 0.5s ease all;
+  opacity: 100;
 }
