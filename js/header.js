@@ -13,7 +13,6 @@ $(function(){
 
     $(document).scroll(function() {
       var y = $(this).scrollTop();
-      console.log(y)
       if (y < 200) {
         $('.header-logo').addClass('transparent')
       } else {
