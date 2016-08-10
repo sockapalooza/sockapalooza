@@ -247,14 +247,21 @@
                                 <h1 class="modal-title sockName" id="gridSystemModalLabel">Sock Name</h1>
                                 <div class="sockDescription">
                                     <h4>These socks are really, really, really pretty !</h4>
+                                    <h3 class="pricePoint">$10.00</h3>
                                     <h5>Made with:</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                    <p class="madeWith">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
                                     <h5 class="stock">Stock Indicator Goes Here</h5>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
+                        <div class="col-sm-5 text-left">
+                            <p>see our featured items:</p>
+                            <img src="https://unsplash.it/50" class="img-rounded featureOne">
+                            <img src="https://unsplash.it/50" class="img-rounded featureTwo">
+                            <img src="https://unsplash.it/50" class="img-rounded featureThree">
+                        </div>
                         <div class="btn-group">
                             <button type="button" class="btn btn-default dropdown-toggle sizeButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 size <span class="caret"></span>
@@ -269,16 +276,12 @@
                             </ul>
                         </div>
                         <div class="btn-group">
-                            <button type="button" class="btn btn-default dropdown-toggle qty-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                quantity <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                            </ul>
+                            <form id='myform' method='POST' action='#'>
+                                <!-- <label for=""> qty: </label> -->
+                                <input type='button' value='-' class='btn qtyminus' field='quantity' /><!--
+                                --><input type='text' name='quantity' value='0' class='input-group-addon qty' /><!--
+                            --><input type='button' value='+' class='btn qtyplus' field='quantity' />
+                            </form>
                         </div>
                         <button type="button" class="btn btn-add-cart">Add to Cart</button>
                     </div>
