@@ -7,8 +7,6 @@ $(function(){
         }
     });
 
-    // window.scrollTo(0,210);
-
     $(window).on('beforeunload', function() {
       $(window).scrollTop(210);
     });
