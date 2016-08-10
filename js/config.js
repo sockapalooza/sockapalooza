@@ -3,8 +3,6 @@
 var api = 'http://1fb503fe.ngrok.io'
 
 // Utilities
-// endpoint ... /users
-// formFields ... {name: 'Joe'}
 function fetchApi(method, endpoint, formFields, callback) {
   var statusCode,
       payload
@@ -18,6 +16,7 @@ function fetchApi(method, endpoint, formFields, callback) {
   }
 
   payload = {
+    credentials: 'include',
     method: method,
     headers: {
       'Content-Type': 'application/json'
@@ -25,11 +24,7 @@ function fetchApi(method, endpoint, formFields, callback) {
   }
 
   if (method.toUpperCase() === 'POST') {
-    formFields[tokenId] = token
 	  payload.body = JSON.stringify(formFields)
-  }
-  else {
-    endpoint += '?' + tokenId + '=' + encodeURIComponent(token)
   }
 
   fetch(api + endpoint, payload)
@@ -43,7 +38,6 @@ function fetchApi(method, endpoint, formFields, callback) {
       }
     })
 }
-
 
 function redirect(url) {
   window.location.href = url
