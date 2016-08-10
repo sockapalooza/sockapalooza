@@ -96,6 +96,7 @@ img {
   font-weight: bold;
   padding: 3px 10px;
   transition: 0.3s ease all;
+  width: auto !important;
 }
 
 .btn-cont:hover {
