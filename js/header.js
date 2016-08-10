@@ -1,6 +1,5 @@
 $(function(){
 
-    $("[data-toggle=popover]").popover();
 
     $("#loginPop").popover({
         html : true,
@@ -8,6 +7,5 @@ $(function(){
           return $("#loginPopBody").html();
         }
     });
-    $
 
 });

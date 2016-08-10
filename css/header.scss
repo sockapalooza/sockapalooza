@@ -43,6 +43,9 @@ width:100%;
 .cart-wrap {
   width: 60%;
 }
+.modal-footer button {
+
+}
 .cart-item-holder {
   position: relative;
   max-width: 50%;
@@ -111,6 +114,7 @@ width:100%;
  font-weight: bold;
  padding: 3px 10px;
  transition: 0.3s ease all;
+ width: auto !important;
 
  &:hover {
    background-color: rgba(2, 66, 108, 0.2);
