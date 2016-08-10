@@ -8,25 +8,12 @@
   font-size: 12px;
 }
 
-.modal-footer button {
-  width: 100px;
-}
-
 .stock {
   color: #d54738;
 }
 
-.btn-add-cart {
-  background-color: transparent;
-  border: 2px solid #d54738;
-  color: #d54738;
-  font-weight: bold;
-  padding: 3px 10px;
-  transition: 0.3s ease all;
-}
-
-.btn-add-cart:hover {
-  background-color: rgba(213, 71, 56, 0.2);
+.modal-footer button {
+  width: 100px;
 }
 
 .sizeButton {
@@ -57,6 +44,19 @@
   background-color: rgba(2, 66, 108, 0.2);
 }
 
+.btn-add-cart {
+  background-color: transparent;
+  border: 2px solid #d54738;
+  color: #d54738;
+  font-weight: bold;
+  padding: 3px 10px;
+  transition: 0.3s ease all;
+}
+
+.btn-add-cart:hover {
+  background-color: rgba(213, 71, 56, 0.2);
+}
+
 .btn-send {
   background-color: transparent;
   border: 2px solid #02426c;
@@ -69,4 +69,25 @@
 .btn-send:hover {
   background-color: rgba(2, 66, 108, 0.2);
   color: #fafafa;
+}
+
+#myform {
+  margin: 5px;
+}
+
+.qty {
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  border: 2px solid #02426c;
+  background-color: rgba(2, 66, 108, 0.2);
+}
+
+input.qtyplus,
+input.qtyminus {
+  width: 25px;
+  height: 30px;
+  border: 2px solid #02426c;
+  background: #fafafa;
+  padding: 0;
 }
