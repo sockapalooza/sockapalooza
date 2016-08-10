@@ -13,6 +13,10 @@ $headerFont:    'Pacifico', cursive;
   box-sizing: border-box;
   font-family: $mainFont;
 }
+body {
+  padding-top: 70px;
+}
+
 img {
 width:100%;
 }
@@ -125,4 +129,8 @@ width:100%;
 }
 .carousel-control.right {
   background-image: none !important;
+}
+
+.logo-row {
+  margin-bottom: 10px;
 }
