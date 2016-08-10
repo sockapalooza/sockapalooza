@@ -71,6 +71,10 @@
   color: #fafafa;
 }
 
+.img-rounded {
+  width: 50px;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
