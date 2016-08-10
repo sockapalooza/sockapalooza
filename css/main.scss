@@ -12,6 +12,7 @@ $mainFont:      'Quicksand', sans-serif;
 $headerFont:    'Pacifico', cursive;
 
 //modal//
+
 .sockName {
     font-family: $headerFont;
     color: $red;
@@ -22,27 +23,14 @@ $headerFont:    'Pacifico', cursive;
     font-size: 12px;
 }
 
-.modal-footer {
-    button {
-        width: 100px;
-    }
-}
-
 .stock {
     color: $red;
 }
 
-.btn-add-cart {
-  background-color: transparent;
-  border: 2px solid $red;
-  color: $red;
-  font-weight: bold;
-  padding: 3px 10px;
-  transition: 0.3s ease all;
-
-  &:hover {
-    background-color: rgba(213, 71, 56, 0.2);
-  }
+.modal-footer {
+    button {
+        width: 100px;
+    }
 }
 
 .sizeButton {
@@ -70,6 +58,19 @@ $headerFont:    'Pacifico', cursive;
     &:hover {
       background-color: rgba(2, 66, 108, 0.2);
     }
+}
+
+.btn-add-cart {
+  background-color: transparent;
+  border: 2px solid $red;
+  color: $red;
+  font-weight: bold;
+  padding: 3px 10px;
+  transition: 0.3s ease all;
+
+  &:hover {
+    background-color: rgba(213, 71, 56, 0.2);
+  }
 }
 
 .btn-send {
@@ -179,4 +180,26 @@ body {
     background-color: rgba(213, 71, 56, 0.2);
   }
 
+}
+
+#myform {
+    margin: 5px;
+}
+
+.qty {
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  border: 2px solid $blue;
+  background-color: rgba(2, 66, 108, 0.2);
+}
+
+
+input.qtyplus,
+input.qtyminus {
+  width: 25px;
+  height: 30px;
+  border: 2px solid $blue;
+  background: $white;
+  padding: 0;
 }

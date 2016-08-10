@@ -1,6 +1,5 @@
 $(function(){
 
-
     $("#loginPop").popover({
         html : true,
         content: function() {
