@@ -26,9 +26,7 @@ width:100%;
 .no-pads {
   padding: 0;
 }
-.border {
-  border: 1px solid $blue;
-}
+
 .nav {
   background-color:$gray;
   padding: 5px;
@@ -37,25 +35,54 @@ width:100%;
 .navcon {
   font-size: 18px;
   padding: 0px;
+  color: $red;
 }
-
+// .cart-modal {
+//   background-color: $black;
+// }
 .cart-wrap {
-
+  width: 60%;
+}
+.cart-item-holder {
+  position: relative;
+  max-width: 50%;
+}
+.cart-item-desc {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 30%;
+  background-color: $gray;
+  color: $black;
+  font-family: $mainFont;
 }
 .cart-head {
+
+  color: $red;
+  font-family: $headerFont !important;
     div {
       padding: 0px;
     }
 }
 
+.close {
+  color: $white;
+}
+
+.border {
+  // border-top: 1px $darkgray solid;
+  border-right: 1px $darkgray solid;
+}
+
+
 .modal-dialog {
   font-family: $mainFont;
 }
 
-.modal-header {
-  border-bottom: 0px !important;
-}
+// .modal-header {
+//   border-bottom: 0px !important;
+// }
 
 .cart-item {
 
@@ -88,4 +115,10 @@ width:100%;
  &:hover {
    background-color: rgba(2, 66, 108, 0.2);
  }
+}
+.carousel-control.left {
+  background-image: none !important;
+}
+.carousel-control.right {
+  background-image: none !important;
 }
