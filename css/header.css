@@ -3,6 +3,10 @@
   font-family: "Quicksand", sans-serif;
 }
 
+body {
+  padding-top: 70px;
+}
+
 img {
   width: 100%;
 }
@@ -109,4 +113,8 @@ img {
 
 .carousel-control.right {
   background-image: none !important;
+}
+
+.logo-row {
+  margin-bottom: 10px;
 }
