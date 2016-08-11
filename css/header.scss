@@ -63,6 +63,7 @@ width:100%;
   background-color: $gray;
   color: $black;
   font-family: $mainFont;
+
 }
 .cart-head {
 
@@ -96,8 +97,14 @@ width:100%;
   &:hover{
     box-shadow: 0px 0px 30px $darkBlue;
       transform: scale(1.01);
+      .cart-item-desc {
+            transform: scale(1.01);
+        }
+      }
+
   }
-}
+
+
 
 .btn-quick-add {
  background-color: transparent;
