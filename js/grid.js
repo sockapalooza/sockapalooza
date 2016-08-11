@@ -15,7 +15,7 @@ $(document).ready(function(){
         merchContainer = document.createElement('div')
 
       sizeDropdown.setAttribute('name', 'sizes')
-      merchImg.setAttribute('src', item.image)
+      merchImg.setAttribute('src', item.product_image)
       btnQuickAdd.setAttribute('data-product-id', item.id)
       btnDetails.setAttribute('data-product-id', item.id)
 
@@ -27,6 +27,8 @@ $(document).ready(function(){
       merchInfo.classList.add('merch-info', 'transparent')
       merchImg.classList.add('merch-img')
       merchContainer.classList.add('col-xs-3', 'merch')
+      sizeDropdown.classList.add('btn-details', 'btn', 'btn-primary')
+
 
       btnQuickAdd.innerHTML = 'Quick Add'
       btnDetails.innerHTML = 'View Details'

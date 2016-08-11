@@ -1,13 +1,24 @@
 $(document).ready(function(){
 	$('body').on('click', '.descriptionModal', function(){
-    
+
 		$("#descriptionModal").modal('show');
     var id = $(this).attr('data-product-id')
 
     fetchApi('GET', '/products/' + id, {}, (item) => {
       console.log(item)
+        var individualPic = document.getElementById('individualPic')
+        individualPic.setAttribute('src', item.product_image)
+
+        var individualPrice = document.getElementById('individualPrice')
+        individualPrice.innerHTML = '$' + (item.price / 100)
+
+        var individualName = document.getElementById('gridSystemModalLabel')
+        individualName.innerHTML = item.name
+
+        var individualStyle = document.getElementById('individualStyle')
+        individualStyle.innerHTML = 'Style: ' + item.style
+      })
     })
-	});
 });
 
 //this is the plus minus for quantity of item to add to card//
@@ -48,6 +59,9 @@ $(function() {
   });
 });
 
+
+
+// this is for the 3 featured items on the desc modal//
 fetchApi('GET', '/featured/products/', {}, (items) => {
     // console.log(items)
 
