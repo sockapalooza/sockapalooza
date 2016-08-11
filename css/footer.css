@@ -74,4 +74,15 @@
   padding: 10px;
 }
 
+.thankYouMessage {
+  font-family: "Quicksand", sans-serif;
+  color: #01253d;
+}
+
+.signature {
+  font-family: "Pacifico", cursive;
+  color: #d54738;
+  margin-right: 20px;
+}
+
 /* If you don't want the footer to be responsive, remove these media queries */
