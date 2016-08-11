@@ -185,11 +185,25 @@ body {
   font-weight: bold;
   padding: 3px 10px;
   transition: 0.3s ease all;
+  margin: 2px;
 
   &:hover {
     background-color: rgba(213, 71, 56, 0.2);
   }
+}
 
+.btn-details {
+  background-color: transparent;
+  border: 2px solid $blue;
+  color: $blue;
+  font-weight: bold;
+  padding: 3px 10px;
+  transition: 0.3s ease all;
+  margin: 2px;
+
+  &:hover {
+    background-color: rgba(2, 66, 108, 0.2);
+  }
 }
 
 #myform {

@@ -34,10 +34,10 @@ $(document).on("click", "#signup", function() {
 //
 //   })
 
-
-fetchApi('GET', '/orders', {}, (response) => {
-console.log(response);
-  })
+// 
+// fetchApi('GET', '/orders', {}, (response) => {
+// console.log(response);
+//   })
 
 // fetchApi('GET', '/orders/', {}, (response) => {
 //   response.forEach(function(object){

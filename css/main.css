@@ -170,10 +170,25 @@ body {
   font-weight: bold;
   padding: 3px 10px;
   transition: 0.3s ease all;
+  margin: 2px;
 }
 
 .btn-quick-add:hover {
   background-color: rgba(213, 71, 56, 0.2);
+}
+
+.btn-details {
+  background-color: transparent;
+  border: 2px solid #02426c;
+  color: #02426c;
+  font-weight: bold;
+  padding: 3px 10px;
+  transition: 0.3s ease all;
+  margin: 2px;
+}
+
+.btn-details:hover {
+  background-color: rgba(2, 66, 108, 0.2);
 }
 
 #myform {
