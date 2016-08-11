@@ -80,6 +80,10 @@ img {
   transform: scale(1.01);
 }
 
+.cart-item:hover .cart-item-desc {
+  transform: scale(1.01);
+}
+
 .btn-quick-add {
   background-color: transparent;
   border: 2px solid #d54738;
