@@ -45,6 +45,27 @@ $(function() {
   });
 });
 
+//fetch for desc modal//
+// fetchApi('GET', '/featured/products/', {}, (items) => {
+    // console.log(items)
+
+    items.forEach(function(item) {
+        console.log(item.product.product_image)
+
+        var productImage = document.createElement('img')
+
+        productImage.setAttribute('src', item.product.product_image)
+
+        productImage.classList.add('img-thumbnail')
+
+        document.getElementById('smallSale1').appendChild(featureImage)
+        document.getElementById('productBox').appendChild(productImage)
+
+    })
+})
+
+
+// this is for the 3 featured items on the desc modal//
 fetchApi('GET', '/featured/products/', {}, (items) => {
     // console.log(items)
 
