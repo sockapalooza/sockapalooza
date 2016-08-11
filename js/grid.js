@@ -35,13 +35,14 @@ fetchApi('GET', '/products/', {}, (items) => {
     merchName.innerHTML = item.name
     merchPrice.innerHTML = '$' + (item.price / 100)
 
+    sizeDropdown.appendChild(staticOption)
+
     item.sizes.forEach(function(size){
       var sizeOption = document.createElement('option')
       sizeOption.innerHTML = size.size
       sizeDropdown.appendChild(sizeOption)
     })
 
-    sizeDropdown.appendChild(staticOption)
     merchInfo.appendChild(merchCategory)
     merchInfo.appendChild(merchName)
     merchInfo.appendChild(merchPrice)
