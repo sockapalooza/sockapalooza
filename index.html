@@ -34,7 +34,7 @@
                         </p>
                         <p>
                             <button type="button" class="btn popover-btn">login</button>
-                            <button type="button" class="btn popover-btn">sign-up</button>
+                            <button type="button" id="signup" class="btn popover-btn">sign-up</button>
                         </p>
                     </form>
                 </div>
@@ -122,8 +122,6 @@
         </div>
     </main>
 
-    <div id="app"></div>
-
     <div class="modal fade cart-modal" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog cart-wrap" role="document">
             <div class="modal-content">
@@ -135,31 +133,10 @@
                     <!-- <div class="col-md-5 col-md-offset-3"><button class="btn btn-lg btn-cont" data-dismiss="modal">Continue Shopping</button><button class="btn btn-quick-add pop btn-lg">Checkout</button></div> -->
 
                 </div>
-                <div class="modal-content">
-                    <div class="col-md-4 no-pads cart-item-holder  border"><img src="http://placehold.it/500x500" class="img-responsive cart-item"/>
-                        <div class="col-md-12 cart-item-desc">
-                            <h6>Painters</h6>
-                            <h5>$15</h5>
-                            <h6>Size L</h6>
-                        </div>
-                    </div>
-                    <div class="col-md-4 no-pads border"><img src="https://robohash.org/f" class="responsive-img cart-item"/>
-                        <div class="row">
-                            <div class="col-md-12 cart-item-desc">
-                                <h6>Painters</h6>
-                                <h5>$15</h5>
-                                <h6>Size L</h6>
-                            </div>
-                        </div>
+                <div class="modal-cart-content">
 
-                    </div>
-                    <div class="col-md-4 no-pads border"><img src="http://placehold.it/500x500" class="img-responsive cart-item"/>
-                        <div class="col-md-12 cart-item-desc">
-                            <h6>Painters</h6>
-                            <h5>$15</h5>
-                            <h6>Size L</h6>
-                        </div>
-                    </div>
+
+
                 </div>
                 <div class="modal-footer">
                     <!-- <div class="col-md-4 border"><a href="#" class="thumbnail"><img src="https://unsplash.it/100/100/?random" /></a></div> -->
@@ -167,7 +144,7 @@
                         <p>Subtotal: $50.00</p>
                         <p>Shipping: $7.99</p>
                         <p>Total: $57.99</p>
-                        <p><button class="btn btn-lg btn-cont" data-dismiss="modal">Continue Shopping</button> <button class="btn btn-quick-add pop btn-lg">Checkout</button></p>
+                        <p><button class="btn btn-lg btn-cont" data-dismiss="modal">Continue Shopping</button> <button id="checkout" class="btn btn-quick-add pop btn-lg" >Checkout</button></p>
                     </div>
                 </div>
             </div>
