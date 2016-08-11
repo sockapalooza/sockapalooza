@@ -23,7 +23,7 @@ $(document).ready(function(){
       merchName.classList.add('merch-name')
       merchPrice.classList.add('merch-price')
       merchInfo.classList.add('merch-info', 'transparent')
-      merchImg.classList.add('merch-img')
+      merchImg.classList.add('merch-img', 'descriptionModal')
       merchContainer.classList.add('col-xs-3', 'merch', 'descriptionModal')
 
       btnQuickAdd.innerHTML = 'Quick Add'
@@ -34,9 +34,11 @@ $(document).ready(function(){
 
       sizeDropdown.appendChild(staticOption)
 
+      var i = 0
       item.sizes.forEach(function(size){
         var sizeOption = document.createElement('option')
-        sizeOption.innerHTML = size.size
+        sizeOption.innerHTML = size.size + ' (' + item.sizings[i].quantity + ')'
+        i++
         sizeDropdown.appendChild(sizeOption)
       })
 
