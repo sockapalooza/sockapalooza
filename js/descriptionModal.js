@@ -1,10 +1,24 @@
 $(document).ready(function(){
-	$("#grid").click(function(e){
-        if(e.target.parentNode.matches(".descriptionModal")) {
+	$('body').on('click', '.descriptionModal', function(){
+
 		$("#descriptionModal").modal('show');
-        // console.log(e.target.parentNode)
-        }
-	});
+    var id = $(this).attr('data-product-id')
+
+    fetchApi('GET', '/products/' + id, {}, (item) => {
+      console.log(item)
+        var individualPic = document.getElementById('individualPic')
+        individualPic.setAttribute('src', item.product_image)
+
+        var individualPrice = document.getElementById('individualPrice')
+        individualPrice.innerHTML = '$' + (item.price / 100)
+
+        var individualName = document.getElementById('gridSystemModalLabel')
+        individualName.innerHTML = item.name
+
+        var individualStyle = document.getElementById('individualStyle')
+        individualStyle.innerHTML = 'Style: ' + item.style
+      })
+    })
 });
 
 //this is the plus minus for quantity of item to add to card//
@@ -45,24 +59,6 @@ $(function() {
   });
 });
 
-//fetch for desc modal//
-// fetchApi('GET', '/featured/products/', {}, (items) => {
-    // console.log(items)
-
-    items.forEach(function(item) {
-        console.log(item.product.product_image)
-
-        var productImage = document.createElement('img')
-
-        productImage.setAttribute('src', item.product.product_image)
-
-        productImage.classList.add('img-thumbnail')
-
-        document.getElementById('smallSale1').appendChild(featureImage)
-        document.getElementById('productBox').appendChild(productImage)
-
-    })
-})
 
 
 // this is for the 3 featured items on the desc modal//

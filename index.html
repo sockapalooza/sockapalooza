@@ -65,7 +65,7 @@
 
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
-            <img src="assets/logos/logo.png" class="logo-row"/>
+            <img src="assets/logos/logo.png" id="home-logo" class="logo-row"/>
         </div>
     </div>
     <div class="row">
@@ -155,8 +155,8 @@
 <!-- description modal -->
 <div class="bs-example">
     <!-- Button HTML (to Trigger Modal) -->
-    <a class="btn btn-lg btn-primary descriptionModal">Pretty Socks Here</a>
-
+    <!-- <a class="btn btn-lg btn-primary descriptionModal">Pretty Socks Here</a> -->
+    
     <!-- Modal HTML -->
     <div id="descriptionModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
         <div class="modal-dialog" role="document">
@@ -164,17 +164,17 @@
                 <div class="modal-body">
                     <div class="row">
                         <p id="itemDescription"></p>
-                        <div class="col-md-4">
-                            <img class="img-thumbnail" src="https://unsplash.it/200/300/?random">
+                        <div class="col-md-4" id="descPic">
+                            <img id="individualPic" class="img-thumbnail" src="#">
                         </div>
                         <div class="col-md-8">
                             <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                             <h1 class="modal-title sockName" id="gridSystemModalLabel">Sock Name</h1>
                             <div class="sockDescription">
-                                <h4>These socks are really, really, really pretty !</h4>
-                                <h3 class="pricePoint">$10.00</h3>
+                                <h3 id="individualPrice" class="pricePoint"></h3>
                                 <h5>Made with:</h5>
-                                <p class="madeWith">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                <p id="individualStyle">
+                                </p>
                             </div>
                         </div>
                     </div>
