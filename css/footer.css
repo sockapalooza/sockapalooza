@@ -82,7 +82,8 @@
 .signature {
   font-family: "Pacifico", cursive;
   color: #d54738;
-  margin-right: 20px;
+  font-size: 30px;
+  margin-right: 30px;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
