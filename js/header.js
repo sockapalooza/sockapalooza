@@ -42,17 +42,21 @@ fetchApi('GET', '/products/', {}, (response) => {
     //prod name
     var name = document.createElement('h6')
     name.appendChild(nameText)
+    name.classList.add('add-space')
     //product price
     var price = document.createElement('h6')
     price.appendChild(priceText)
+    price.classList.add('add-space')
+    
     //prod size
     var size = document.createElement('h6')
     size.appendChild(sizeText)
+    size.classList.add('add-space')
 
     //handles the overlay
-    div1.appendChild(nameText)
-    div1.appendChild(priceText)
-    div1.appendChild(sizeText)
+    div1.appendChild(name)
+    div1.appendChild(price)
+    div1.appendChild(size)
     //main div
     div.appendChild(img)
     div.appendChild(div1)
