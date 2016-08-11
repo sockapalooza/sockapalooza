@@ -41,3 +41,37 @@ $(function() {
     }
   });
 });
+
+fetchApi('GET', '/products/', {}, (items) => {
+    console.log(items)
+    items.forEach(function(item) {
+        console.log(item)
+        // var div = document.createElement('a')
+        // div.classList.add('selected')
+    })
+    // etsyData.results.forEach(function(boardGame) {
+    //   var div = document.createElement('a')
+    //   div.classList.add('board-game')
+    //   div.setAttribute('href', boardGame.url)
+    //
+    //   var img = document.createElement('img')
+    //   img.setAttribute('src', boardGame.Images[0].url_570xN)
+    //   console.log(boardGame)
+    //   div.appendChild(img)
+    //
+    //   var title = document.createElement('p')
+    //   title.innerHTML = boardGame.title
+    //   div.appendChild(title)
+    //
+    //   var seller = document.createElement('p')
+    //   seller.innerHTML = boardGame.Shop.shop_name
+    //   div.appendChild(seller)
+    //
+    //   var price = document.createElement('p')
+    //   price.innerHTML = boardGame.price
+    //   div.appendChild(price)
+    //
+      document.getElementById('selected-item').appendChild(div)
+    //
+    // })
+})
