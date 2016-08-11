@@ -28,16 +28,27 @@ $(function(){
 $(document).on("click", "#signup", function() {
     redirect('signup.html');
 });
+$(document).on("click", "#home-logo", function() {
+    redirect('index.html');
+});
+$(document).on("click", ".btn-quick-add", function() {
+     console.log();
+});
 
 // fetchApi('GET', '/orders/', {}, (response) => {
 //   response.forEach(function(object){
 //
 //   })
 
-// 
+
 // fetchApi('GET', '/orders', {}, (response) => {
 // console.log(response);
 //   })
+// fetchApi('GET', '/orders/', {}, (response) => {
+// console.log(response);
+//   })
+//POST order/id/orderings
+//prod id , prod qty, orderid , size
 
 // fetchApi('GET', '/orders/', {}, (response) => {
 //   response.forEach(function(object){

@@ -2,7 +2,6 @@ $(document).ready(function(){
 
   //Fetch the API data
   fetchApi('GET', '/products/', {}, (items) => {
-    // console.log(items)
     items.forEach(function(item){
       var btnQuickAdd = document.createElement('button'),
         btnDetails = document.createElement('button'),
@@ -38,9 +37,11 @@ $(document).ready(function(){
 
       sizeDropdown.appendChild(staticOption)
 
+      var i = 0
       item.sizes.forEach(function(size){
         var sizeOption = document.createElement('option')
-        sizeOption.innerHTML = size.size
+        sizeOption.innerHTML = size.size + ' (' + item.sizings[i].quantity + ')'
+        i++
         sizeDropdown.appendChild(sizeOption)
       })
 

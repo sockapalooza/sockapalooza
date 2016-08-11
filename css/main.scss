@@ -227,3 +227,27 @@ input.qtyminus {
   background: $white;
   padding: 0;
 }
+
+.checkout-form {
+  margin-bottom: 20px;
+}
+
+.city {
+  width: 75%;
+  display: inline-block;
+}
+
+.state {
+  width: 23%;
+  display: inline-block;
+}
+
+.zip {
+  width: 33%;
+  display: inline-block;
+}
+
+.country {
+  width: 65%;
+  display: inline-block;
+}
