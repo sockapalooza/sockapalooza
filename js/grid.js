@@ -2,7 +2,6 @@ $(document).ready(function(){
 
   //Fetch the API data
   fetchApi('GET', '/products/', {}, (items) => {
-    console.log(items)
     items.forEach(function(item){
       var btnQuickAdd = document.createElement('button'),
         staticOption = document.createElement('option'),
