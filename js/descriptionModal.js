@@ -1,6 +1,9 @@
 $(document).ready(function(){
-	$(".descriptionModal").click(function(){
+	$("#grid").click(function(e){
+        if(e.target.parentNode.matches(".descriptionModal")) {
 		$("#descriptionModal").modal('show');
+        // console.log(e.target.parentNode)
+        }
 	});
 });
 
@@ -42,36 +45,19 @@ $(function() {
   });
 });
 
-fetchApi('GET', '/products/', {}, (items) => {
-    console.log(items)
+fetchApi('GET', '/featured/products/', {}, (items) => {
+    // console.log(items)
+
     items.forEach(function(item) {
-        console.log(item)
-        // var div = document.createElement('a')
-        // div.classList.add('selected')
+        console.log(item.product.product_image)
+
+        var featureImage = document.createElement('img')
+
+        featureImage.setAttribute('src', item.product.product_image)
+
+        featureImage.classList.add('img-rounded')
+
+        document.getElementById('smallSale1').appendChild(featureImage)
+
     })
-    // etsyData.results.forEach(function(boardGame) {
-    //   var div = document.createElement('a')
-    //   div.classList.add('board-game')
-    //   div.setAttribute('href', boardGame.url)
-    //
-    //   var img = document.createElement('img')
-    //   img.setAttribute('src', boardGame.Images[0].url_570xN)
-    //   console.log(boardGame)
-    //   div.appendChild(img)
-    //
-    //   var title = document.createElement('p')
-    //   title.innerHTML = boardGame.title
-    //   div.appendChild(title)
-    //
-    //   var seller = document.createElement('p')
-    //   seller.innerHTML = boardGame.Shop.shop_name
-    //   div.appendChild(seller)
-    //
-    //   var price = document.createElement('p')
-    //   price.innerHTML = boardGame.price
-    //   div.appendChild(price)
-    //
-      document.getElementById('selected-item').appendChild(div)
-    //
-    // })
 })
