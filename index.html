@@ -120,9 +120,6 @@
         <div id="grid" class="row">
 
         </div>
-    </main>
-
-    <div id="app"></div>
 
     <div class="modal fade cart-modal" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog cart-wrap" role="document">
@@ -135,31 +132,10 @@
                     <!-- <div class="col-md-5 col-md-offset-3"><button class="btn btn-lg btn-cont" data-dismiss="modal">Continue Shopping</button><button class="btn btn-quick-add pop btn-lg">Checkout</button></div> -->
 
                 </div>
-                <div class="modal-content">
-                    <div class="col-md-4 no-pads cart-item-holder  border"><img src="http://placehold.it/500x500" class="img-responsive cart-item"/>
-                        <div class="col-md-12 cart-item-desc">
-                            <h6>Painters</h6>
-                            <h5>$15</h5>
-                            <h6>Size L</h6>
-                        </div>
-                    </div>
-                    <div class="col-md-4 no-pads border"><img src="https://robohash.org/f" class="responsive-img cart-item"/>
-                        <div class="row">
-                            <div class="col-md-12 cart-item-desc">
-                                <h6>Painters</h6>
-                                <h5>$15</h5>
-                                <h6>Size L</h6>
-                            </div>
-                        </div>
+                <div class="modal-cart-content">
 
-                    </div>
-                    <div class="col-md-4 no-pads border"><img src="http://placehold.it/500x500" class="img-responsive cart-item"/>
-                        <div class="col-md-12 cart-item-desc">
-                            <h6>Painters</h6>
-                            <h5>$15</h5>
-                            <h6>Size L</h6>
-                        </div>
-                    </div>
+
+
                 </div>
                 <div class="modal-footer">
                     <!-- <div class="col-md-4 border"><a href="#" class="thumbnail"><img src="https://unsplash.it/100/100/?random" /></a></div> -->
@@ -186,6 +162,7 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <div class="row">
+                        <div id="selected-item"></div>
                         <div class="col-md-4">
                             <img class="img-thumbnail" src="https://unsplash.it/200/300/?random">
                         </div>
@@ -204,11 +181,12 @@
                 </div>
                 <div class="modal-footer">
                     <div class="col-sm-5 text-left">
-                        <p>see our featured items:</p>
+                        <p>Featured Items:</p>
                         <img src="https://unsplash.it/50" class="img-rounded featureOne">
                         <img src="https://unsplash.it/50" class="img-rounded featureTwo">
                         <img src="https://unsplash.it/50" class="img-rounded featureThree">
                     </div>
+                    <div class="rightSideDescBtn">
                     <div class="btn-group">
                         <button type="button" class="btn btn-default dropdown-toggle sizeButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             size <span class="caret"></span>
@@ -232,6 +210,7 @@
                 </div>
                 <button type="button" class="btn btn-add-cart">Add to Cart</button>
             </div>
+        </div>
         </div>
     </div><!-- /.modal-content -->
 </div><!-- /.modal-dialog -->
