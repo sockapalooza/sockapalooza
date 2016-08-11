@@ -86,6 +86,17 @@ $headerFont:    'Pacifico', cursive;
     }
 }
 
+.thankYouMessage {
+    font-family: $mainFont;
+    color: $darkblue;
+}
+
+.signature {
+    font-family: $headerFont;
+    color: $red;
+    margin-right: 20px;
+}
+
 /* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 1000px) {
