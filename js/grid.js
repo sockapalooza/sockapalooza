@@ -16,6 +16,7 @@ $(document).ready(function(){
 
       sizeDropdown.setAttribute('name', 'sizes')
       merchImg.setAttribute('src', item.image)
+      merchContainer.setAttribute('data-product-id', item.id)
 
       btnQuickAdd.classList.add('btn-quick-add')
       merchCategory.classList.add('merch-category')
