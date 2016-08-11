@@ -50,11 +50,6 @@ $(document).on("click", ".btn-quick-add", function() {
 //POST order/id/orderings
 //prod id , prod qty, orderid , size
 
-
-
-
-
-
 // fetchApi('GET', '/orders/', {}, (response) => {
 //   response.forEach(function(object){
 //

@@ -1,9 +1,12 @@
 $(document).ready(function(){
-	$("#grid").click(function(e){
-        if(e.target.parentNode.matches(".descriptionModal")) {
+	$('body').on('click', '.descriptionModal', function(){
+    
 		$("#descriptionModal").modal('show');
-        // console.log(e.target.parentNode)
-        }
+    var id = $(this).attr('data-product-id')
+
+    fetchApi('GET', '/products/' + id, {}, (item) => {
+      console.log(item)
+    })
 	});
 });
 

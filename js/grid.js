@@ -4,6 +4,7 @@ $(document).ready(function(){
   fetchApi('GET', '/products/', {}, (items) => {
     items.forEach(function(item){
       var btnQuickAdd = document.createElement('button'),
+        btnDetails = document.createElement('button'),
         staticOption = document.createElement('option'),
         sizeDropdown = document.createElement('select'),
         merchCategory = document.createElement('h1'),
@@ -14,18 +15,21 @@ $(document).ready(function(){
         merchContainer = document.createElement('div')
 
       sizeDropdown.setAttribute('name', 'sizes')
-      merchImg.setAttribute('src', item.product_image)
-      merchContainer.setAttribute('data-product-id', item.id)
+      merchImg.setAttribute('src', item.image)
+      btnQuickAdd.setAttribute('data-product-id', item.id)
+      btnDetails.setAttribute('data-product-id', item.id)
 
       btnQuickAdd.classList.add('btn-quick-add')
+      btnDetails.classList.add('btn-details', 'descriptionModal')
       merchCategory.classList.add('merch-category')
       merchName.classList.add('merch-name')
       merchPrice.classList.add('merch-price')
       merchInfo.classList.add('merch-info', 'transparent')
-      merchImg.classList.add('merch-img', 'descriptionModal')
-      merchContainer.classList.add('col-xs-3', 'merch', 'descriptionModal')
+      merchImg.classList.add('merch-img')
+      merchContainer.classList.add('col-xs-3', 'merch')
 
       btnQuickAdd.innerHTML = 'Quick Add'
+      btnDetails.innerHTML = 'View Details'
       staticOption.innerHTML = 'Sizes:'
       merchCategory.innerHTML = item.category
       merchName.innerHTML = item.name
@@ -45,6 +49,7 @@ $(document).ready(function(){
       merchInfo.appendChild(merchName)
       merchInfo.appendChild(merchPrice)
       merchInfo.appendChild(sizeDropdown)
+      merchInfo.appendChild(btnDetails)
       merchInfo.appendChild(btnQuickAdd)
       merchContainer.appendChild(merchImg)
       merchContainer.appendChild(merchInfo)
