@@ -28,6 +28,22 @@ $(function(){
 $('body').on("click", "#signup", function() {
   redirect('signup.html');
 });
+$('body').on("click", "#signin", function() {
+    var formFields = {
+        name: document.getElementById('username').value,
+        password: document.getElementById('password').value
+    }
+
+    console.log('click')
+
+    fetchApi('POST', '/login', formFields, function(response, statusCode) {
+        console.log(response)
+  //something like response.user.token, it might not be exactly that
+        if (statusCode >= 200 && statusCode < 300) {
+            redirect('index.html')
+        }
+    })
+});
 $('body').on("click", "#home-logo", function() {
   redirect('index.html');
 });
