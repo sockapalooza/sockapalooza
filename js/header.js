@@ -36,8 +36,13 @@ $('body').on("click", ".glyphicon-shopping-cart", function() {
     var orderid = response.order
 
     fetchApi('GET', '/orders/' + orderid, {}, (item) => {
+        console.log(item.orderings[0].id);
 
-      console.log(item);
+        // item.orderings.foreach(function(item){
+        //
+        //
+        // })
+    item.orderings
     })
   })
 });
