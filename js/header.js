@@ -44,9 +44,7 @@ $('body').on("click", "#signin", function() {
         }
     })
 });
-$('body').on("click", "#home-logo", function() {
-  redirect('index.html');
-});
+
 $('body').on("click", "#checkout", function() {
   redirect('checkout.html');
 });
