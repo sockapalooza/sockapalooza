@@ -27,7 +27,7 @@ $(document).ready(function(){
       merchInfo.classList.add('merch-info', 'transparent')
       merchImg.classList.add('merch-img')
       merchContainer.classList.add('col-xs-3', 'merch')
-      sizeDropdown.classList.add('btn-details', 'btn', 'btn-primary')
+      sizeDropdown.classList.add('btn-details', 'btn', 'btn-primary', 'dropDownButton')
 
 
       btnQuickAdd.innerHTML = 'Quick Add'
