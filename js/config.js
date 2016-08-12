@@ -1,5 +1,5 @@
 // API Host
-// var api = 'https://gentle-basin-30331.herokuapp.com'
+// var api = 'https://powerful-coast-15525.herokuapp.com/'
 var api = 'http://1fb503fe.ngrok.io'
 
 // Utilities
