@@ -147,6 +147,7 @@ $('body').on('click', '.btn-quick-add', function(e){
 
    var qty = $(this).attr('data-product-id')
   clearTimeout(debounce)
+
   debounce = setTimeout(function() {
 
     fetchApi('GET', '/show/', {}, (response) => {
@@ -167,7 +168,7 @@ $('body').on('click', '.btn-quick-add', function(e){
             size_id:3
           }, (item) => {
 
-            // console.log(item);
+            alert('item added to cart')
 
         })
         }
