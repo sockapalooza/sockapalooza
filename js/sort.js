@@ -19,24 +19,9 @@ $(document).ready(function(){
         break
     }
 
-    console.log(field)
-
     fetchApi('GET', '/products/?sort=' + field, {}, (items) => {
-      console.log(items)
       document.getElementById('grid').innerHTML = ''
       createGrid(items)
-    //   console.log(item)
-    //   var individualPic = document.getElementById('individualPic')
-    //   individualPic.setAttribute('src', item.product_image)
-    //
-    //   var individualPrice = document.getElementById('individualPrice')
-    //   individualPrice.innerHTML = '$' + (item.price / 100)
-    //
-    //   var individualName = document.getElementById('gridSystemModalLabel')
-    //   individualName.innerHTML = item.name
-    //
-    //   var individualDesc = document.getElementById('individualDesc')
-    //   individualDesc.innerHTML = item.description
     })
   })
 });
