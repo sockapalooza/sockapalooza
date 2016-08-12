@@ -19,8 +19,8 @@ $(document).ready(function(){
       btnQuickAdd.setAttribute('data-product-id', item.id)
       btnDetails.setAttribute('data-product-id', item.id)
 
-      btnQuickAdd.classList.add('btn-quick-add')
-      btnDetails.classList.add('btn-details', 'descriptionModal')
+      btnQuickAdd.classList.add('btn', 'btn-quick-add')
+      btnDetails.classList.add('btn-details','btn', 'descriptionModal')
       merchCategory.classList.add('merch-category')
       merchName.classList.add('merch-name')
       merchPrice.classList.add('merch-price')
