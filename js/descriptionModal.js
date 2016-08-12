@@ -15,8 +15,8 @@ $(document).ready(function(){
         var individualName = document.getElementById('gridSystemModalLabel')
         individualName.innerHTML = item.name
 
-        var individualStyle = document.getElementById('individualStyle')
-        individualStyle.innerHTML = 'Style: ' + item.style
+        var individualDesc = document.getElementById('individualDesc')
+        individualDesc.innerHTML = item.description
       })
     })
 });
