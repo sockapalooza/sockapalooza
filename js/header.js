@@ -1,5 +1,6 @@
 $(function(){
 
+
   $("#loginPop").popover({
     html : true,
     content: function() {
@@ -119,6 +120,8 @@ $('body').on("click", ".glyphicon-shopping-cart", function() {
         size.appendChild(sizeText)
         size.classList.add('add-space')
 
+
+
         //handles the overlay
         div1.appendChild(name)
         div1.appendChild(price)
@@ -132,7 +135,23 @@ $('body').on("click", ".glyphicon-shopping-cart", function() {
         document.querySelector('.modal-cart-content').appendChild(div)
 
 
+
       })
+      //sub total
+      var totalText = Number(cartResponse.subtotal)
+      console.log(totalText)
+      var total = document.createElement('p')
+      totalText = (totalText / 100)
+
+      var subtotalText = document.createTextNode(totalText)
+
+      total.appendChild(subtotalText)
+      total.classList.add('subtotal')
+
+      console.log(subtotalText);
+      console.log(totalText);
+      document.querySelector('.total-box').appendChild(total)
+      //total stuff here!!
     })
   })
 });
