@@ -15,7 +15,7 @@ $(document).ready(function(){
         merchContainer = document.createElement('div')
 
       sizeDropdown.setAttribute('name', 'sizes')
-      merchImg.setAttribute('src', item.image)
+      merchImg.setAttribute('src', item.product_image)
       btnQuickAdd.setAttribute('data-product-id', item.id)
       btnDetails.setAttribute('data-product-id', item.id)
 
