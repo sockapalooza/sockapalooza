@@ -214,6 +214,10 @@ body {
   background-color: rgba(2, 66, 108, 0.2);
 }
 
+.dropDownButton {
+  height: 30px;
+}
+
 input.qtyplus,
 input.qtyminus {
   width: 25px;

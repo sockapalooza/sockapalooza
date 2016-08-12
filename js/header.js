@@ -1,38 +1,74 @@
 $(function(){
 
-    $("#loginPop").popover({
-        html : true,
-        content: function() {
-          return $("#loginPopBody").html();
-        }
-    });
+  $("#loginPop").popover({
+    html : true,
+    content: function() {
+      return $("#loginPopBody").html();
+    }
+  });
 
 
 
-    $(window).on('beforeunload', function() {
-      $(window).scrollTop(210);
-    });
+  $(window).on('beforeunload', function() {
+    $(window).scrollTop(210);
+  });
 
-    $(document).scroll(function() {
-      var y = $(this).scrollTop();
-      if (y < 200) {
-        $('.header-logo').addClass('transparent')
-      } else {
-        $('.header-logo').removeClass('transparent');
-      }
-    });
+  $(document).scroll(function() {
+    var y = $(this).scrollTop();
+    if (y < 200) {
+      $('.header-logo').addClass('transparent')
+    } else {
+      $('.header-logo').removeClass('transparent');
+    }
+  });
 
 });
 
 
-$(document).on("click", "#signup", function() {
-    redirect('signup.html');
+$('body').on("click", "#signup", function() {
+  redirect('signup.html');
 });
-$(document).on("click", "#home-logo", function() {
-    redirect('index.html');
+$('body').on("click", "#home-logo", function() {
+  redirect('index.html');
 });
-$(document).on("click", ".btn-quick-add", function() {
-     console.log();
+$('body').on("click", ".glyphicon-shopping-cart", function() {
+  fetchApi('GET', '/show/', {}, (response) => {
+    var orderid = response.order
+
+    fetchApi('GET', '/orders/' + orderid, {}, (item) => {
+        console.log(item.orderings[0].id);
+
+        // item.orderings.foreach(function(item){
+        //
+        //
+        // })
+    item.orderings
+    })
+  })
+});
+
+var debounce
+
+$('body').on('click', '.btn-quick-add', function(e){
+  var id = $(this).attr('data-product-id')
+  console.log(id);
+  var qty = $(this).attr('data-product-id')
+  clearTimeout(debounce)
+  debounce = setTimeout(function() {
+
+    fetchApi('GET', '/show/', {}, (response) => {
+      var orderid = response.order
+
+      fetchApi('POST', '/orders/' + orderid + '/orderings', {
+        quantity:1,
+        product_id:id,
+        size_id:3
+      }, (item) => {})
+    })
+
+
+
+  }, 1000)
 });
 
 // fetchApi('GET', '/orders/', {}, (response) => {

@@ -17,6 +17,29 @@ $(document).ready(function(){
 
         var individualDesc = document.getElementById('individualDesc')
         individualDesc.innerHTML = item.description
+
+        var staticOption = document.createElement('option'),
+            sizeDropdown = document.createElement('select')
+
+            sizeDropdown.setAttribute('name', 'sizes')
+
+            sizeDropdown.classList.add('btn-details', 'btn', 'btn-primary', 'dropDownButton')
+
+            staticOption.innerHTML = 'Sizes:'
+
+            sizeDropdown.appendChild(staticOption)
+
+            var i = 0
+            item.sizes.forEach(function(size){
+              var sizeOption = document.createElement('option')
+              sizeOption.innerHTML = size.size + ' (' + item.sizings[i].quantity + ')'
+              i++
+              sizeDropdown.appendChild(sizeOption)
+            })
+            console.log(sizeDropdown)
+            document.getElementById('qtyButton').innerHTML = ''
+            document.getElementById('qtyButton').appendChild(sizeDropdown)
+
       })
     })
 });
@@ -58,6 +81,11 @@ $(function() {
     }
   });
 });
+
+
+
+
+
 
 
 
