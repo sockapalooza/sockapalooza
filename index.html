@@ -33,7 +33,8 @@
                             <input type="password" id="password" name="password" />
                         </p>
                         <p>
-                            <button type="button" id="login-button" class="btn popover-btn">login</button>
+                            <button type="button" id="signin" class="btn popover-btn">login</button>
+
                             <button type="button" id="signup" class="btn popover-btn">sign-up</button>
                         </p>
                     </form>
@@ -112,8 +113,15 @@
         </div>
     </div>
 
-    <section>
+    <section class="filter-box">
         <h1 class="filters"><span class="filters-arrow flip">v</span> Filters |</h1>
+        <select id="sort-dropdown"class="btn btn-details btn-primary sort">
+          <option>Price: high to low</option>
+          <option>Price: low to high</option>
+          <option>Style: A to Z</option>
+          <option>Color: A to Z</option>
+        </select>
+        <button id="btn-sort" class="btn btn-send">Sort</button>
     </section>
 
     <main class="container-fluid merch-grid">
@@ -231,5 +239,10 @@
 <script src="js/filters.js"></script>
 <script src="js/header.js"></script>
 <script src="js/grid.js"></script>
+<<<<<<< HEAD
+
+=======
+<script src="js/sort.js"></script>
+>>>>>>> ef4f599ba20090a4f009dfc1d5c1aedd6e4de2e6
 </body>
 </html>
