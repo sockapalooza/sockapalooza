@@ -30,7 +30,7 @@ $('body').on("click", "#signup", function() {
 });
 $('body').on("click", "#signin", function() {
     var formFields = {
-        name: document.getElementById('username').value,
+        username: document.getElementById('username').value,
         password: document.getElementById('password').value
     }
 
